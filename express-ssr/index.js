@@ -8,11 +8,9 @@ const vueServerRender = require('vue-server-renderer').createRenderer({
 
 const App = require('./src/entry-server.js')
 app.get('*',async (req,res) => {
-
   
   res.status(200);
   res.setHeader('Content-Type', 'text/html;charset=utf-8;')
-
 
   let app = await App({url: req.url})
   console.log(123)
