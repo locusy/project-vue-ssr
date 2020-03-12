@@ -4,7 +4,9 @@ const createRouter = require('./router');
 // 实例 每次请求都会创建新的实例
 
 module.exports = (context) => {
+
   const router = createRouter()
+  
   const app = new Vue({
     router,
     data: {
