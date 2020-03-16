@@ -17,7 +17,6 @@ const vueApp = new Vue({
 })
 
 app.get('*',(req,res) => {
-
   res.status(200);
   res.setHeader('Content-Type', 'text/html;charset=utf-8;')
 
